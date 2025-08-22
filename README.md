@@ -1,11 +1,19 @@
-# LSDNER
-The code for ECAI2025 paper named "Enhancing few-shot Named Entity Recognition via Label Semantic Description and Diversity Text"
+# LSDNER  
+Enhancing Few-Shot Named Entity Recognition via Label Semantic Description and Diversity Text  
 
-### step 1: AskForClues
-`python data/askForClues.py`
-### Step 2: Clusterring and Sampling
+## 🚀 Quick Start  
+```bash
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Generate clues
+python data/askForClues.py
+
+# 3. Clustering & sampling
 python demo_cluster.py
-### Step 3: AskForResponse
+
+# 4. Generate responses
 python ICL/askForResponse.py
-### Step 4: Evaluation
+
+# 5. Evaluation
 python ICL/CADEC/metric/compute_F1.py
